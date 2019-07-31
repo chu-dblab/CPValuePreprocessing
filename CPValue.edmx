@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PredictionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="D_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="nvarchar(max)" />
+          <Property Name="Dname" Type="nvarchar(max)" />
+          <Property Name="UDname" Type="nvarchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="G_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Gname" Type="nvarchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="U_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="nvarchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="大眾傳播學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="工程學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="文史哲學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="外語學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="生命科學學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="生物資源學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="地球與環境學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="法政學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="社會與心理學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="建築與設計學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="財經學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="教育學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="資訊學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="遊憩與運動學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="管理學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="數理化學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="醫藥衛生學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <EntityType Name="藝術學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Uname" Type="varchar(max)" />
+          <Property Name="Dname" Type="varchar(max)" />
+          <Property Name="UDname" Type="varchar(max)" />
+          <Property Name="MinScore" Type="float" />
+          <Property Name="SalaryInK" Type="float" />
+          <Property Name="P" Type="float" />
+          <Property Name="C" Type="float" />
+          <Property Name="CP" Type="float" />
+        </EntityType>
+        <Function Name="CP_Preprocessing" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="RemoveTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="PredictionModelStoreContainer">
+          <EntitySet Name="D_CP" EntityType="Self.D_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="G_CP" EntityType="Self.G_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="U_CP" EntityType="Self.U_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="大眾傳播學群_CP" EntityType="Self.大眾傳播學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="工程學群_CP" EntityType="Self.工程學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="文史哲學群_CP" EntityType="Self.文史哲學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="外語學群_CP" EntityType="Self.外語學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="生命科學學群_CP" EntityType="Self.生命科學學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="生物資源學群_CP" EntityType="Self.生物資源學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="地球與環境學群_CP" EntityType="Self.地球與環境學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="法政學群_CP" EntityType="Self.法政學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="社會與心理學群_CP" EntityType="Self.社會與心理學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="建築與設計學群_CP" EntityType="Self.建築與設計學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="財經學群_CP" EntityType="Self.財經學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="教育學群_CP" EntityType="Self.教育學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="資訊學群_CP" EntityType="Self.資訊學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="遊憩與運動學群_CP" EntityType="Self.遊憩與運動學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="管理學群_CP" EntityType="Self.管理學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="數理化學群_CP" EntityType="Self.數理化學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="醫藥衛生學群_CP" EntityType="Self.醫藥衛生學群_CP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="藝術學群_CP" EntityType="Self.藝術學群_CP" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PredictionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="D_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="G_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Gname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="U_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="大眾傳播學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="工程學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="文史哲學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="外語學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="生命科學學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="生物資源學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="地球與環境學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="法政學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="社會與心理學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="建築與設計學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="財經學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="教育學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="資訊學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="遊憩與運動學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="管理學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="數理化學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="醫藥衛生學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityType Name="藝術學群_CP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Uname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UDname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MinScore" Type="Double" />
+          <Property Name="SalaryInK" Type="Double" />
+          <Property Name="P" Type="Double" />
+          <Property Name="C" Type="Double" />
+          <Property Name="CP" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="PredictionEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="D_CP" EntityType="Self.D_CP" />
+          <EntitySet Name="G_CP" EntityType="Self.G_CP" />
+          <EntitySet Name="U_CP" EntityType="Self.U_CP" />
+          <EntitySet Name="大眾傳播學群_CP" EntityType="Self.大眾傳播學群_CP" />
+          <EntitySet Name="工程學群_CP" EntityType="Self.工程學群_CP" />
+          <EntitySet Name="文史哲學群_CP" EntityType="Self.文史哲學群_CP" />
+          <EntitySet Name="外語學群_CP" EntityType="Self.外語學群_CP" />
+          <EntitySet Name="生命科學學群_CP" EntityType="Self.生命科學學群_CP" />
+          <EntitySet Name="生物資源學群_CP" EntityType="Self.生物資源學群_CP" />
+          <EntitySet Name="地球與環境學群_CP" EntityType="Self.地球與環境學群_CP" />
+          <EntitySet Name="法政學群_CP" EntityType="Self.法政學群_CP" />
+          <EntitySet Name="社會與心理學群_CP" EntityType="Self.社會與心理學群_CP" />
+          <EntitySet Name="建築與設計學群_CP" EntityType="Self.建築與設計學群_CP" />
+          <EntitySet Name="財經學群_CP" EntityType="Self.財經學群_CP" />
+          <EntitySet Name="教育學群_CP" EntityType="Self.教育學群_CP" />
+          <EntitySet Name="資訊學群_CP" EntityType="Self.資訊學群_CP" />
+          <EntitySet Name="遊憩與運動學群_CP" EntityType="Self.遊憩與運動學群_CP" />
+          <EntitySet Name="管理學群_CP" EntityType="Self.管理學群_CP" />
+          <EntitySet Name="數理化學群_CP" EntityType="Self.數理化學群_CP" />
+          <EntitySet Name="醫藥衛生學群_CP" EntityType="Self.醫藥衛生學群_CP" />
+          <EntitySet Name="藝術學群_CP" EntityType="Self.藝術學群_CP" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PredictionModelStoreContainer" CdmEntityContainer="PredictionEntities">
+          <EntitySetMapping Name="D_CP">
+            <EntityTypeMapping TypeName="PredictionModel.D_CP">
+              <MappingFragment StoreEntitySet="D_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="G_CP">
+            <EntityTypeMapping TypeName="PredictionModel.G_CP">
+              <MappingFragment StoreEntitySet="G_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Gname" ColumnName="Gname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="U_CP">
+            <EntityTypeMapping TypeName="PredictionModel.U_CP">
+              <MappingFragment StoreEntitySet="U_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="大眾傳播學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.大眾傳播學群_CP">
+              <MappingFragment StoreEntitySet="大眾傳播學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="工程學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.工程學群_CP">
+              <MappingFragment StoreEntitySet="工程學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="文史哲學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.文史哲學群_CP">
+              <MappingFragment StoreEntitySet="文史哲學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="外語學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.外語學群_CP">
+              <MappingFragment StoreEntitySet="外語學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="生命科學學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.生命科學學群_CP">
+              <MappingFragment StoreEntitySet="生命科學學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="生物資源學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.生物資源學群_CP">
+              <MappingFragment StoreEntitySet="生物資源學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="地球與環境學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.地球與環境學群_CP">
+              <MappingFragment StoreEntitySet="地球與環境學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="法政學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.法政學群_CP">
+              <MappingFragment StoreEntitySet="法政學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="社會與心理學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.社會與心理學群_CP">
+              <MappingFragment StoreEntitySet="社會與心理學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="建築與設計學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.建築與設計學群_CP">
+              <MappingFragment StoreEntitySet="建築與設計學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="財經學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.財經學群_CP">
+              <MappingFragment StoreEntitySet="財經學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="教育學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.教育學群_CP">
+              <MappingFragment StoreEntitySet="教育學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="資訊學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.資訊學群_CP">
+              <MappingFragment StoreEntitySet="資訊學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="遊憩與運動學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.遊憩與運動學群_CP">
+              <MappingFragment StoreEntitySet="遊憩與運動學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="管理學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.管理學群_CP">
+              <MappingFragment StoreEntitySet="管理學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="數理化學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.數理化學群_CP">
+              <MappingFragment StoreEntitySet="數理化學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="醫藥衛生學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.醫藥衛生學群_CP">
+              <MappingFragment StoreEntitySet="醫藥衛生學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="藝術學群_CP">
+            <EntityTypeMapping TypeName="PredictionModel.藝術學群_CP">
+              <MappingFragment StoreEntitySet="藝術學群_CP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Uname" ColumnName="Uname" />
+                <ScalarProperty Name="Dname" ColumnName="Dname" />
+                <ScalarProperty Name="UDname" ColumnName="UDname" />
+                <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+                <ScalarProperty Name="SalaryInK" ColumnName="SalaryInK" />
+                <ScalarProperty Name="P" ColumnName="P" />
+                <ScalarProperty Name="C" ColumnName="C" />
+                <ScalarProperty Name="CP" ColumnName="CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
